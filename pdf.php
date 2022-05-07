@@ -1,10 +1,14 @@
 <?php	
+	ini_set("memory_limit", "999M");
+	ini_set("max_execution_time", "999");
 
 	//referenciar o DomPDF com namespace
 	use Dompdf\Dompdf;
 
+	require 'dompdf/vendor/autoload.php';
+
 	// include autoloader
-	require_once("dompdf/autoloadinc.php");
+	require_once("dompdf/autoload.inc.php");
 
 	//Criando a Instancia
 	$dompdf = new DOMPDF();
